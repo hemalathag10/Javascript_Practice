@@ -1,0 +1,20 @@
+Write a function that takes a string as input and returns the string with the first letter of each word capitalized. For example, if the input string is "the quick brown fox", the function should return "The Quick Brown Fox". Note that the function should capitalize the first letter of every word, even if it's a small word like "and" or "the".
+
+let str=prompt("Enter any sentence :");
+let a=str.split(" ")
+let ans=""
+console.log(capitalize(a))
+function capitalize(a){
+for(let i=0;i<a.length;i++)
+{
+   let word=a[i].charAt(0).toUpperCase()
+   let rem=a[i].replace(a[i][0],word)
+   ans=ans+" "+rem
+   
+}
+return ans
+}
+----------------------------
+Enter any sentence :javascript is a scripting language
+Javascript Is A Scripting Language
+
