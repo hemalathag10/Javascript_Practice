@@ -1,0 +1,21 @@
+Write a function that takes a string and returns the longest word in the string. If there are two or more words that are of the same length, return the first one that appears in the string.
+For example, if the input string is "The quick brown fox jumps over the lazy dog", the function should return "quick".
+
+let str=prompt("Enter any sentence :");
+let a=str.split(" ")
+let max=0
+let word=""
+console.log(longestword(str))
+function longestword(str){
+for(let i=0;i<a.length;i++)
+{
+    if(a[i].length>max){
+        max=a[i].length
+        word=a[i]
+    }
+}
+return word
+}
+----------------------------
+Enter any sentence :javascript is a scripting language
+javascript
