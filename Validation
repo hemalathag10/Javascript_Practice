@@ -1,0 +1,18 @@
+Write a function that checks if a given string is a valid username. A valid username should contain only alphanumeric characters and underscores, and should be between 4 and 16 characters long.
+Write a function called isValidUsername that takes a string username in its parameter and returns true or false.
+
+let user=prompt("Enter User_Name :");
+console.log(check(user))
+function check(){
+let condition=/^[a-zA-Z0-9_]{4,16}$/
+
+if (condition.test(user)){
+    return "TRUE"
+}
+else{
+    return "FALSE"
+}
+}
+--------------------------
+INPUT : hema_123
+OUTPUT: TRUE
