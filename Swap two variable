@@ -1,0 +1,10 @@
+Declare two variables `x` and `y` with numerical values. Swap their values without using a third variable
+
+let a=5
+let b=3
+a=a+b
+b=a-b
+a=a-b
+console.log("a : ",a,"b : ",b)
+---------------------------------------
+OUTPUT : a :  3  b :  5
