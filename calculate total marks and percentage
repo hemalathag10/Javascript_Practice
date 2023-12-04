@@ -1,0 +1,17 @@
+calculate total marks and percentage(input to be in array).
+
+let no_sub=Number(prompt("Enter number of subjects :"));
+let subjects=[]
+let total=0
+for(let i=0;i<no_sub;i++)
+{
+    subjects[i]=Number(prompt("Enter marks :"));
+    total=total+subjects[i]
+}
+let percentage=total/no_sub
+console.log("TOTAL_MARKS :",total)
+console.log("PERCENTAGE :",percentage.toFixed(2),"%");
+-----------------------------------------------------
+OUTPUT :
+TOTAL_MARKS : 279
+PERCENTAGE : 93.00 %
