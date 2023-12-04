@@ -1,0 +1,39 @@
+Calculate total marks and update the status student is Pass/Fail and publish their Grade.
+
+let sub_1=Number(prompt("enter marks of sub_1 :"));
+let sub_2=Number(prompt("enter marks of sub_2 :"));
+let sub_3=Number(prompt("enter marks of sub_3 :"));
+let sub_4=Number(prompt("enter marks of sub_4 :"));
+let sub_5=Number(prompt("enter marks of sub_5 :"));
+
+let marks=sub_1+sub_2+sub_3+sub_4+sub_5;
+let result=""
+if (marks>175){
+    result="PASS"
+}
+else{
+    result="FAIL"
+}
+
+let grade=""
+if (marks>200 && marks<349){
+    grade="C"
+}
+else if(marks>350 && marks<449){
+    grade="B"
+
+}
+else if(marks>450){
+    grade="A"
+}
+else{
+    grade="NIL"
+}
+console.log("TOTAL_MARKS :",marks)
+console.log("RESULT :",result)
+console.log("GRADE :",grade)
+--------------------------------
+OUTPUT :
+TOTAL_MARKS : 369
+RESULT : PASS
+GRADE : B
