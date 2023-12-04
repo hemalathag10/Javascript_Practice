@@ -1,0 +1,19 @@
+Write a function that takes an array of numbers and returns a new array with only the unique numbers (removing duplicates).
+
+let array_size=Number(prompt("Enter size of array :"));
+let array_2=new Set(elements(array_size))
+array=[...array_2]
+console.log(array)
+
+function elements(array_size){
+let array_1=[]
+
+for(let i=0;i<size;i++)
+{
+    array_1[i]=Number(prompt("Enter elements :"));
+}
+return array_1
+}
+--------------------------------------------------
+INPUT : [4,6,5,4,4]
+OUTPUT : [4,6,5]
