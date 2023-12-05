@@ -1,0 +1,11 @@
+let a=Number(prompt("enter number_1 :"))
+let b=Number(prompt("enter number_2 :"))
+console.log("Smallest Common Multiple :",lcm(a,b))
+function lcm(a, b) { 
+    let large = Math.max(a, b); 
+    let small = Math.min(a, b); 
+    for (i = large; ; i += large) { 
+        if (i % small == 0) 
+            return i; 
+    } 
+} 
