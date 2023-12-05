@@ -1,0 +1,15 @@
+//Write a function to search for a department by its department id/ department name, if department exists to return list  of students.
+
+let dept_name=(prompt("Enter department name: ")).toUpperCase();
+let dict={"ECE":["abc","def","gh"], "CSE":["ghi","jk"], "EEE":["aio","opl"]}
+
+console.log("Student_List :",search(dept_name))
+function search(name){
+for (let key in dict) {
+    if(name==key)
+        return dict[key]
+    }
+}
+-------------------------------------
+OUTPUT : Enter department name: ece
+        Student_List : [ 'abc', 'def', 'gh' ]
