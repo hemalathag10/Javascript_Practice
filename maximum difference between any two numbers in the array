@@ -1,0 +1,22 @@
+Write a function that takes an array of integers and returns the maximum difference between any two numbers in the array where the larger element appears after the smaller element.
+  
+let arr = [];
+let size=5
+for (let i = 0; i < size; i++) {
+    arr[i] = Number(prompt("Enter any number: "));
+}
+let max = 0
+let k = 0;
+console.log("maximum difference :", difference(arr))
+
+function difference(arr){
+for (let i = 0; i < size; i++) {
+    for (let j = i + 1; j < size; j++) {
+        let diff = arr[i] - arr[j];
+        if (max<diff) {
+            max = diff
+        }
+    }
+}
+return max
+}
