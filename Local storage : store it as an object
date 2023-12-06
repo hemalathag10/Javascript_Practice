@@ -1,0 +1,22 @@
+Store a name, userId in LocalStorage
+        Instead of storing individual data , store it as an object
+        Display the user details(id,name)
+---------------------------------------------------
+
+let user_credentials={"user_name":"hema","id":192}
+localStorage.setItem("user_credentials",JSON.stringify(user_credentials))
+
+let data=localStorage.getItem("user_credentials")
+if(data){
+    let user_d=JSON.parse(data)
+    console.log(user_d.user_name)
+    console.log(user_d.id)
+
+}
+else{
+    console.log("no user data")
+}
+-------------------
+OUTPUT:
+hema
+192
