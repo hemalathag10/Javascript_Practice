@@ -1,0 +1,29 @@
+//Store a name, userId in LocalStorage
+localStorage.setItem("name","abc")
+localStorage.setItem("userId",256)
+
+//Retrieve the data from localStorage
+let name=localStorage.getItem("name")
+let user_id=localStorage.getItem("userId")
+
+console.log("user_name :",name)
+console.log("user_Id :",user_id)
+
+//Convert userId string to number
+let num=parseInt(user_id,10)
+console.log("number :",num)
+
+//Short Syntax to get data from localStorage
+let nam=localStorage.name
+let id=localStorage.userId
+
+console.log("user_name :",nam)
+console.log("user_Id :",id)
+
+//Remove an item from LocalStorage
+localStorage.removeItem("name")
+
+//Remove all items from LocalStorage
+localStorage.clear()
+console.log("user_name :",name)
+console.log("user_Id :",user_id)
