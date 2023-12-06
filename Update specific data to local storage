@@ -1,0 +1,38 @@
+const user = {
+  id: 101,
+  name: 'John Doe',
+  active: 0
+};
+
+localStorage.setItem('user', JSON.stringify(user));
+
+let data=JSON.parse(localStorage.getItem('user'))
+data.active=1
+localStorage.setItem(JSON.stringify(data))
+
+const new_users = [
+  { id: 111, name: 'abc', active: 0 },
+  { id: 512, name: 'def', active: 0 },
+  { id: 353, name: 'ghi', active: 0 }
+];
+
+let newusers = JSON.stringify(new_users);
+localStorage.setItem("new_users", newusers);
+
+// Retrieve new_users data from localStorage
+const storedUsers = JSON.parse(localStorage.getItem('new_users'));
+
+if (storedUsers) {
+  let find_user = storedUsers.find(user => user.id === 111);
+
+  if (find_user) {
+    find_user.active = 1;
+
+    // Store the updated new_users data back in localStorage
+    localStorage.setItem('new_users', JSON.stringify(storedUsers));
+  } else {
+    console.error('User with id=111 not found.');
+  }
+} else {
+  console.error('new_users not found in localStorage.');
+}
